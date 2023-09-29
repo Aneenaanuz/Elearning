@@ -62,7 +62,7 @@ class CourseUpdateView(UpdateView):
     form_class = CourseForm
     model = Course
     template_name = 'course-update.html'
-    success_url = reverse_lazy('courses-list')
+    success_url = reverse_lazy('course-list')
 
 @method_decorator(sadecks, name='dispatch')
 class CourseDeleteView(View):
